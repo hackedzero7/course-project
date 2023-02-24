@@ -32,4 +32,8 @@ app.use('/api/v1', user)
 
 module.exports = app;
 
+app.use('/', (req, res) => {
+    res.send("Server is running successfully")
+})
+
 app.use(ErrorMiddleware);
